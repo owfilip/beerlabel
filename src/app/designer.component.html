@@ -1,41 +1,57 @@
 
 <div class="row">
   <div class="col-md-8 offset-md-2">
-    <h3>Beer Label Designer</h3>
+    <h3 class="text-center mt-5">Beer Label Designer</h3>
+    <hr>
     <div class="row">
       <div class="col">
         <form>
           <div class="form-group row">
-            <label class="col-rom-label col-md-2" for="title">Title</label>
-            <div class="col-md-10">
-              <input type="text" name="title" id="title" required class="form-control col-md-8">
+            <label for="title" class="col-2 col-form-label">Title</label>
+            <div class="col-10">
+              <input type="text" name="title" id="title" required class="form-control">
             </div>
           </div>
-          <div class="form-group">
-            <label for="extract">Extract (%):</label>
-            <input type="text" name="extract" id="extract" required class="form-control">
+          <div class="form-group row">
+            <label for="alcohol" class="col-2 col-form-label">Alcohol (%):</label>
+            <div class="col-3">
+              <input type="text" name="alcohol" id="alcohol" required class="form-control">
+            </div>
+            <label for="extract" class="col-2 col-form-label offset-2">Extract (%):</label>
+            <div class="col-3">
+              <input type="text" name="extract" id="extract" required class="form-control">
+            </div>
           </div>
-          <div class="form-group">
-            <label for="alcohol">Alcohol (%):</label>
-            <input type="text" name="alcohol" id="alcohol" required class="form-control">
+          <div class="form-group row">
+            <label for="malts" class="col-2 col-form-label">Malts:</label>
+            <div class="col-10">
+              <input type="text" name="malts" id="malts" required class="form-control">
+            </div>
           </div>
-          <div class="form-group">
-            <label for="malts">Malts:</label>
-            <input type="text" name="malts" id="malts" required class="form-control">
+          <div class="form-group row">
+            <label class="col-2 col-form-label" for="hops">Hops:</label>
+            <div class="col-10">
+              <input type="text" name="hops" id="hops" required class="form-control">
+            </div>
           </div>
-          <div class="form-group">
-            <label for="hops">Hops:</label>
-            <input type="text" name="hops" id="hops" required class="form-control">
+          <div class="form-group row">
+            <label for="yeast" class="col-2 col-form-label">Yeast:</label>
+            <div class="col-3">
+              <input type="text" name="yeast" id="yeast" required class="form-control">
+            </div>
+            <label for="bottlingDate" class="col-2 col-form-label offset-1">Bottling date:</label>
+            <div class="col-4">
+              <input type="text" class="form-control" bsDatepicker required>
+            </div>
           </div>
-          <div class="form-group">
-            <label for="yeast">Yeast:</label>
-            <input type="text" name="yeast" id="yeast" required class="form-control">
+          <div class="row">
+            <div class="col-3 offset-3">
+              <button type="submit" (click)="onSubmit()" class="btn btn-primary btn-block">Preview</button>
+            </div>
+            <div class="col-3">
+              <button type="button" class="btn btn-success btn-block" disabled>Save</button>
+            </div>
           </div>
-          <div class="form-group">
-            <label for="bottlingDate">Bottling date:</label>
-            <input type="text" class="form-control" bsDatepicker required>
-          </div>
-          <button type="submit" (click)="onSubmit()" >Preview</button>
         </form>
       </div>
     </div>
