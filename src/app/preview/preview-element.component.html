@@ -1,11 +1,34 @@
 <div class="row">
-  <div class="col-md-2">
-    Alc. 10%
+  <div class="col-md-3 parameters">
+    Alc. {{this.labelDetails.alcohol}}%
   </div>
-  <div class="col-md-8">
+  <div class="col-md-6">
     &nbsp;
   </div>
-  <div class="col-md-2">
-    12% BLG
+  <div class="col-md-3 parameters text-right">
+    {{this.labelDetails.extract}}% BLG
   </div>
+</div>
+<div class="row mt-5 pt-5" style="height: 200px">
+  <div class="col-10 offset-1 text-center">
+    <p class="title text-uppercase">{{this.labelDetails.title}}</p>
+  </div>
+</div>
+<div class="row ingredients mt-5">
+  <div class="col-2">Słody:</div>
+  <div class="col">{{this.labelDetails.malts}}</div>
+</div>
+<div class="row ingredients mt-2">
+  <div class="col-2">Chmiele:</div>
+  <div class="col">{{this.labelDetails.hops}}</div>
+</div>
+<div class="row ingredients mt-2">
+  <div class="col-2">Drożdże:</div>
+  <div class="col">{{this.labelDetails.yeast}}</div>
+</div>
+<div class="row bottling-date mt-4">
+  <div class="col text-right">
+    Zabutelkowano: {{this.labelDetails.bottlingDate}}
+  </div>
+  <div class="col-1">&nbsp;</div>
 </div>

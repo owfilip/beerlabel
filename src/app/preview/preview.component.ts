@@ -6,8 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./preview.component.css']
 })
 export class PreviewComponent implements OnInit {
-  private rows = 2;
-  private columns = 1;
+  private rows = 3;
+  private columns = 3;
 
   constructor() { }
 
