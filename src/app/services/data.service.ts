@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { LabelDetails } from '../models/label-details.model';
-import { Observable, Subject, BehaviorSubject } from 'rxjs';
+import { Observable, BehaviorSubject } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'

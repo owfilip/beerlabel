@@ -5,48 +5,48 @@
     <hr>
     <div class="row">
       <div class="col">
-        <form>
+        <form (ngSubmit)="onSubmit()" #f="ngForm" >
           <div class="form-group row">
             <label for="title" class="col-2 col-form-label">Title</label>
             <div class="col-10">
-              <input type="text" name="title" id="title" required class="form-control">
+              <input type="text" ngModel name="title" id="title" required class="form-control">
             </div>
           </div>
           <div class="form-group row">
             <label for="alcohol" class="col-2 col-form-label">Alcohol (%):</label>
             <div class="col-3">
-              <input type="text" name="alcohol" id="alcohol" required class="form-control">
+              <input type="text" ngModel name="alcohol" id="alcohol" required class="form-control">
             </div>
             <label for="extract" class="col-2 col-form-label offset-2">Extract (%):</label>
             <div class="col-3">
-              <input type="text" name="extract" id="extract" required class="form-control">
+              <input type="text" ngModel name="extract" id="extract" required class="form-control">
             </div>
           </div>
           <div class="form-group row">
             <label for="malts" class="col-2 col-form-label">Malts:</label>
             <div class="col-10">
-              <input type="text" name="malts" id="malts" required class="form-control">
+              <input type="text" ngModel name="malts" id="malts" required class="form-control">
             </div>
           </div>
           <div class="form-group row">
             <label class="col-2 col-form-label" for="hops">Hops:</label>
             <div class="col-10">
-              <input type="text" name="hops" id="hops" required class="form-control">
+              <input type="text" ngModel name="hops" id="hops" required class="form-control">
             </div>
           </div>
           <div class="form-group row">
             <label for="yeast" class="col-2 col-form-label">Yeast:</label>
             <div class="col-3">
-              <input type="text" name="yeast" id="yeast" required class="form-control">
+              <input type="text" ngModel name="yeast" id="yeast" required class="form-control">
             </div>
             <label for="bottlingDate" class="col-2 col-form-label offset-1">Bottling date:</label>
             <div class="col-4">
-              <input type="text" class="form-control" bsDatepicker required>
+              <input type="text" ngModel name="bottlingDate" class="form-control" bsDatepicker required>
             </div>
           </div>
           <div class="row">
             <div class="col-3 offset-3">
-              <button type="submit" (click)="onSubmit()" class="btn btn-primary btn-block">Preview</button>
+              <button type="submit" class="btn btn-primary btn-block">Preview</button>
             </div>
             <div class="col-3">
               <button type="button" class="btn btn-success btn-block" disabled>Save</button>

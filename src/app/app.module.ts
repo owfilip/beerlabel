@@ -1,4 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
 import { NgModule } from '@angular/core';
 import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
@@ -22,6 +23,7 @@ const appRoutes: Routes = [
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     RouterModule.forRoot(appRoutes),
     BsDatepickerModule.forRoot()
   ],
