@@ -38,6 +38,7 @@ export class DesignerComponent implements OnInit, OnDestroy {
       yeast: this.labelDetails2.yeast,
       bottlingDate: this.labelDetails2.bottlingDate
     });
+    console.log('Value set');
   }
 
   onSubmit() {
